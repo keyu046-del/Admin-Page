@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Page - A&K Nail Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>Admin - A&K Nail Studio</header>
+
+<div id="loginContainer">
+  <h2>Admin Login</h2>
+  <input type="password" id="adminPassword" placeholder="Enter Admin Password" />
+  <button onclick="checkLogin()">Login</button>
+  <p id="loginError"></p>
+</div>
+
+<div id="adminContent" style="display: none;">
+  <div class="container">
+    <h1>Welcome Admin</h1>
+    <button onclick="window.open('https://docs.google.com/spreadsheets/d/1tOpSP_Yos0oP5QQf2NdUvJkHucBtQv4pZBhD4e7kC00/edit?usp=sharing', '_blank')">📋 View Booking Sheet</button>
+
+    <h2>Upload Customer Photo</h2>
+    <form id="uploadForm">
+      <input type="file" id="photo" accept="image/*" required />
+      <input type="text" id="caption" placeholder="Write a caption (optional)" />
+      <button type="submit">Upload</button>
+    </form>
+
+    <h2>Gallery</h2>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
