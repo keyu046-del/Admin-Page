@@ -1,246 +1,69 @@
-
-:root {
-  --cream: #f6eee0;
-  --peach: #e8c8a0;
-  --maroon: #561c24;
-  --text-dark: #000;
-  --text-light: #fff;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: var(--cream);
-  color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+    background-color: #f6eee0;
+    color: #000;
+    margin: 0;
+    padding: 0;
 }
-
 header {
-  background-color: var(--peach);
-  padding: 20px;
-  text-align: center;
+    background-color: #e8c8a0;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #561c24;
 }
-
-.logo-text {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  color: var(--maroon);
-  letter-spacing: 2px;
-}
-
-.ampersand {
-  font-family: cursive;
-  font-size: 44px;
-}
-
-.studio-subtitle {
-  font-size: 18px;
-  font-weight: normal;
-  font-family: 'Poppins', sans-serif;
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  background-color: var(--maroon);
-  padding: 15px;
-}
-
-nav a {
-  color: var(--cream);
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  text-decoration: underline;
-  color: var(--peach);
-}
-
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 50px 20px;
-  background: linear-gradient(90deg, var(--cream) 50%, var(--peach) 50%);
-}
-
-.hero-image {
-  width: 320px;
-  height: 400px;
-  background: url('main2.jpg') no-repeat center center;
-  background-size: cover;
-  border-radius: 20px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.hero-text {
-  max-width: 400px;
-  margin-left: 30px;
-}
-
-.hero-text h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.hero-text button {
-  padding: 12px 24px;
-  background: linear-gradient(45deg, var(--maroon), #3f121a);
-  color: var(--text-light);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 500;
-  transition: transform 0.3s ease;
-}
-
-.hero-text button:hover {
-  transform: scale(1.05);
-}
-
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.about, .services, .customers {
-  background-color: #fff7f2;
-}
-
-.services ul {
-  list-style: none;
-  padding: 0;
-  font-size: 16px;
-  display: inline-block;
-  text-align: left;
-}
-
-.customer-photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-.customer-photos img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.customer-photos img:hover {
-  transform: scale(1.05);
-}
-
-form {
-  max-width: 500px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  padding: 20px;
-  background: #fff;
-  border-radius: 10px;
-}
-
-input, select, textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button[type="submit"], .container button {
-  background-color: var(--maroon);
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border: none;
-  padding: 10px;
-  transition: background 0.3s ease;
-}
-
-button[type="submit"]:hover, .container button:hover {
-  background-color: #3f121a;
-}
-
-footer {
-  background: var(--maroon);
-  color: white;
-  padding: 10px;
-  position: relative;
-  text-align: center;
-  font-size: 14px;
-}
-
-footer a.hidden-admin {
-  color: transparent;
-  font-size: 1px;
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-}
-
-footer a.hidden-admin:hover {
-  color: white;
-  font-size: 12px;
-}
-
-#confirmation, #contactConfirmation {
-  text-align: center;
-  font-size: 16px;
-  color: green;
-}
-
 .container {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
-
 #loginContainer {
-  max-width: 400px;
-  margin: 100px auto;
-  padding: 30px;
-  background: white;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 #loginError {
-  color: red;
-  margin-top: 10px;
+    color: red;
+    margin-top: 10px;
 }
-
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+input, button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #561c24;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #3f121a;
+}
 .review-card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-  background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
 }
-
 .review-card img {
-  max-width: 100%;
-  border-radius: 5px;
+    max-width: 100%;
+    border-radius: 5px;
 }
